@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:background="@drawable/tornadobg">
+
+
+    <ImageButton
+        android:id="@+id/btnNews"
+        android:layout_width="109dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/newsicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpenMap"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <ImageButton
+        android:id="@+id/btnCurrentLoc"
+        android:layout_width="117dp"
+        android:layout_height="115dp"
+        android:background="@drawable/curlocicon"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:text="Current Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNews"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <ImageButton
+        android:id="@+id/btnOpenMap"
+        android:layout_width="127dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/mapicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnReport"
+        android:layout_width="129dp"
+        android:layout_height="107dp"
+        android:background="@drawable/reporticon"
+        android:text="Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOpenMap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
